@@ -1,0 +1,675 @@
+body {
+        min-width: 1200px;
+    }
+    
+    .edu-top-ad {
+        display: none;
+        height: 36px;
+        padding: 0 55px;
+        font: 1.2em/3 monospace;
+        background: #f3f3f3;
+    }
+    
+    .edu-top-ad .edu-no-tips {
+        float: right;
+        display: inline-block;
+        margin-right: 60px;
+    }
+    
+    .edu-top-ad .edu-see-ad {
+        color: #21a557;
+    }
+    
+    .edu-top {
+        height: 89px;
+        padding: 0 55px;
+    }
+    
+    .edu-top>ul {
+        padding: 32px;
+    }
+    
+    .edu-top>ul:first-of-type {
+        float: left;
+    }
+    
+    .edu-top>ul:last-of-type {
+        float: right;
+        font: 1.6em monospace;
+    }
+    
+    .edu-top>ul>li {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .edu-top .edu-logo {
+        float: left;
+        width: 235px;
+        height: 22px;
+        padding-top: 32px;
+        background: url('../img/edu/sprite.png') 0 0 content-box;
+    }
+    
+    .edu-top .edu-fans {
+        padding: 0 20px;
+    }
+    
+    .edu-top .edu-subscribe {
+        width: 54px;
+        height: 21px;
+        background: #21a557;
+        cursor: pointer;
+    }
+    
+    .edu-top .edu-subscribe a {
+        color: white;
+    }
+    
+    .edu-top .edu-subscribe:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .2), hsla(0, 0%, 100%, .2)) #21a557;
+    }
+    
+    .edu-top .edu-fans-cancel {
+        border-radius: .2em;
+        border: 1px solid #f1f1f1;
+        padding: 0 3px;
+        background: linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05));
+    }
+    
+    .edu-top .edu-fans-cancel:hover {
+        background: white;
+    }
+    
+    .edu-top .edu-fans-cancel:hover span {
+        color: #21a557;
+    }
+    
+    .edu-top .edu-ad-links>li {
+        padding-right: 28px;
+        cursor: pointer;
+    }
+    
+    .edu-top .edu-ad-links>li:hover a {
+        color: #21a557;
+    }
+    
+    .edu-top .edu-search {
+        width: 19px;
+        height: 24px;
+        background: url('../img/edu/sprite.png') -2px -34px;
+        transform: scale(0.8);
+        transition: .5s linear;
+    }
+    
+    .edu-top .edu-search:hover {
+        transform: scale(1);
+    }
+    
+    .edu-carousel {
+        position: relative;
+    }
+    
+    .edu-carousel .carousel-fadein {
+        opacity: 1;
+    }
+    
+    .edu-carousel .carousel-fadeout {
+        opacity: 0;
+    }
+    
+    .edu-carousel .carousel-pic {
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+        height: 460px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        transition: 1s linear opacity;
+    }
+    
+    .edu-carousel .carousel-pic1 {
+        z-index: 1;
+        background: url('../img/edu/banner1.jpg') top center;
+    }
+    
+    .edu-carousel .carousel-pic2 {
+        margin-left: -100%;
+        background: url('../img/edu/banner2.jpg') top center;
+    }
+    
+    .edu-carousel .carousel-pic3 {
+        margin-left: -100%;
+        background: url('../img/edu/banner3.jpg') top center;
+    }
+    
+    .edu-carousel .carousel-point {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        bottom: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .edu-carousel .carousel-point li {
+        display: inline-block;
+        margin: 0 2px;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background: black;
+    }
+    
+    .edu-carousel .carousel-point li.selected {
+        background: #ccc;
+    }
+    
+    .edu-carousel .carousel-point li:hover {
+        background: #f1f1f1;
+    }
+    
+    .edu-ad {
+        height: 295px;
+        width: 1200px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    .edu-ad>div {
+        width: 400px;
+        height: 200px;
+        box-sizing: border-box;
+        float: left;
+        padding: 75px 30px 0 0;
+    }
+    
+    .edu-ad .mooc,
+    .edu-ad .cloud-course,
+    .edu-ad .open-course {
+        width: 80px;
+        height: 80px;
+        float: left;
+        margin-right: 18px;
+    }
+    
+    .edu-ad .open-course {
+        background: url('../img/edu/sprite.png') -51px -32px;
+    }
+    
+    .edu-ad .cloud-course {
+        background: url('../img/edu/sprite.png') -139px -32px;
+    }
+    
+    .edu-ad .mooc {
+        background: url('../img/edu/sprite.png') -228px -32px;
+    }
+    
+    .edu-ad .edu-ad-content {
+        overflow: hidden;
+    }
+    
+    .edu-ad .edu-ad-content p:first-child {
+        font: 2.2em/2 monospace;
+    }
+    
+    .edu-ad .edu-ad-content p {
+        font: 1.4em/2 monospace;
+    }
+    
+    .edu-ad .edu-ad-content a {
+        color: #21a557;
+    }
+    
+    .edu-ad .edu-ad-content a:hover {
+        text-decoration: underline;
+    }
+    
+    .edu-content .edu-horizon-group {
+        padding-top: 2px;
+        height: 226px;
+        background: url('../img/edu/ad_img.jpg') no-repeat content-box top center;
+    }
+    
+    .edu-content .edu-course {
+        float: left;
+        width: 980px;
+    }
+    
+    .edu-content .edu-course-aside {
+        float: left;
+        width: 225px;
+        box-sizing: border-box;
+    }
+    
+    .edu-content {
+        background: #f8f8f8;
+    }
+    
+    .edu-content .edu-main-content {
+        margin-top: 80px;
+        width: 1205px;
+        margin: 80px auto 0;
+        padding-bottom: 80px;
+    }
+    
+    .edu-content .edu-c-tab {
+        height: 80px;
+    }
+    
+    .edu-content .edu-c-tab >button {
+        width: 200px;
+        height: 50px;
+        background: white;
+        box-shadow: 0px 1px 1px -1px #d4d3d3, 1px 2px 0 #ececeb;
+        font: 2em monospace;
+    }
+    
+    .edu-content .edu-c-tab >button+button {
+        margin-left: -.2em;
+    }
+    
+    .edu-content .edu-c-tab>button.edu-c-tab-selected {
+        background: #39a030;
+        color: white;
+    }
+    
+    .edu-content .edu-c-tab >button:not(.edu-c-tab-selected) {
+        color: hsla(0, 100%, 0%, .8);
+    }
+    
+    .edu-content .edu-c-tab >button:not(.edu-c-tab-selected):hover {
+        color: black;
+        background: linear-gradient(hsla(0, 0%, 100%, .9), hsla(0, 0%, 100%, .9)) #39a030;
+    }
+    
+    .edu-content .edu-box {
+        position: relative;
+        float: left;
+        margin: 0 1.6em 1.5em 0;
+        width: 225px;
+        height: 240px;
+        box-shadow: 0px 1px 1px -1px #e6e6e6, 1px 2px 0 #f1f1f1, -1px 2px 0 #f1f1f1, 1px -1px 0 #f1f1f1;
+        cursor: pointer;
+    }
+    
+    .edu-content .edu-box p {
+        font: 1.2em/2 monospace;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0 6px;
+        color: #dcdcdc;
+    }
+    
+    .edu-content .edu-box p:first-of-type {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .edu-content .edu-box p:nth-of-type(3n) {
+        display: inline-block;
+        border: 1px solid #dcdcdc;
+        border-radius: .2em;
+        line-height: 1.5em;
+        padding: 0 .2em 0 1.2em;
+        margin: .5em 0 0 .5em;
+        background: url('../img/edu/sprite.png') 2px -71px no-repeat;
+    }
+    
+    .edu-content .edu-box p:last-child {
+        color: #ff3f00;
+        font-weight: bold;
+    }
+    
+    .edu-content .edu-box img {
+        width: 223px;
+        margin: 1px;
+    }
+    
+    .edu-content .edu-box:hover .edu-box-detail {
+        display: block;
+    }
+    
+    .edu-content .edu-box:hover img {
+        position: relative;
+        z-index: 3;
+    }
+    
+    .edu-content .edu-box .edu-box-detail {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: -12px;
+        left: -12px;
+        width: 470px;
+        /*height: 251px;*/
+        /*background: rgba(255,0,0,.2) content-box;*/
+        /*padding:12px;    */
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px -1px #d7d6d6, -1px -1px 1px -1px #d7d6d6, 2px 2px 2px -2px #ebebeb, -2px -2px 2px -2px #ebebeb;
+    }
+    
+    .edu-box .edu-box-detail .edu-box-detail-top {
+        background: white;
+        height: 155px;
+    }
+    
+    .edu-box .edu-box-detail .edu-box-detail-top >div {
+        float: right;
+        padding: 1em 9em 0 0;
+    }
+    
+    .edu-box-detail .edu-box-detail-top >div>p:nth-of-type(3n) {
+        background: white;
+        border: none;
+        padding: 0;
+    }
+    
+    .edu-box-detail .edu-box-detail-top >div>p:first-child {
+        font-size: 2em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .edu-box-detail .edu-box-detail-top span {
+        display: inline-block;
+        width: 15px;
+        height: 14px;
+        background: url('../img/edu/sprite.png') 2px -71px no-repeat;
+    }
+    
+    .edu-box .edu-box-detail .edu-box-detail-bottom {
+        display: table-cell;
+        padding: 1em 1.5em 1em;
+        font: 1.6em/24px monospace;
+        vertical-align: middle;
+        /*height: 84px;*/
+        background: #f8f8f8;
+    }
+    
+    .edu-c-page {
+        text-align: right;
+    }
+    
+    .edu-c-page ul {
+        display: inline-block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    
+    .edu-c-page ul>li {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    .edu-c-page ul>li {
+        text-align: center;
+        font: 14px/20px monospace;
+    }
+    
+    .edu-c-page ul>li a {
+        color: #737373;
+    }
+    
+    .edu-c-page ul>li:first-child,
+    .edu-c-page ul>li:last-child,
+    .edu-c-page ul>li:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .2), hsla(0, 0%, 100%, .2)) #39a030;
+    }
+    
+    .edu-c-page ul>li:first-child a,
+    .edu-c-page ul>li:last-child a,
+    .edu-c-page ul>li:hover a {
+        color: white;
+    }
+    
+    .edu-c-page ul>li:first-child:hover,
+    .edu-c-page ul>li:last-child:hover {
+        background: #39a030;
+    }
+    
+    .edu-c-page ul a.selected {
+        color: #39a030;
+    }
+    
+    .edu-c-page ul>li:first-child,
+    .edu-c-page ul>li:last-child {
+        width: 40px;
+    }
+    
+    .edu-course-aside .edu-aside-box {
+        width: 223px;
+        padding-bottom: .5em;
+        box-shadow: 0px 1px 1px -1px #e6e6e6, 1px 2px 0 #f1f1f1, -1px 2px 0 #f1f1f1, 1px -1px 0 #f1f1f1;
+        box-sizing: border-box;
+    }
+    
+    .edu-course-aside .edu-aside-box p:first-child {
+        height: 55px;
+        font: 1.6em/55px monospace;
+        padding-left: 1em;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    
+    .edu-aside-box .edu-video {
+        position: relative;
+        width: 189px;
+        height: 125px;
+        margin: 0 auto;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .edu-aside-box .edu-video-img {
+        width: inherit;
+        height: inherit;
+        background: url('../img/edu/video.jpg') no-repeat;
+        transition: 1s linear;
+    }
+    
+    .edu-aside-box .edu-video:hover .play {
+        transform: rotate(1turn);
+    }
+    
+    .edu-aside-box .edu-video:hover .edu-video-img {
+        transform: scale(1.1);
+    }
+    
+    .edu-aside-box .edu-video-p {
+        font: 1.4em/22px monospace;
+        margin: 1em 0 0 1.4em;
+    }
+    
+    .edu-aside-box .play {
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        background: url('../img/edu/sprite.png') 0 -150px no-repeat;
+        top: 50%;
+        left: 50%;
+        /*transform: translate(-50%, -50%);*/
+        margin-left: -23px;
+        margin-top: -23px;
+        transition: 1s;
+    }
+    
+    .edu-aside-box.edu-ranks {
+        margin-top: 20px;
+    }
+    
+    .edu-aside-box .edu-rank {
+        display: block;
+        width: 184px;
+        height: 50px;
+        margin: 19px auto;
+    }
+    
+    .edu-aside-box .edu-rank:hover {
+        color: #39a030;
+    }
+    
+    .edu-aside-box .edu-rank img {
+        display: block;
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-right: 1em;
+    }
+    
+    .edu-aside-box .edu-rank div {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font: 1.4em/18px monospace;
+    }
+    
+    .edu-aside-box .edu-rank div:first-of-type {
+        font-size: 1.8em;
+        padding: .5em 0 .1em;
+    }
+    
+    .edu-aside-box .edu-rank div:last-child {
+        width: 38px;
+        height: 20px;
+        padding-left: 1.1em;
+        color: #ccc;
+        background: url('../img/edu/sprite.png') 0px -72px no-repeat;
+    }
+    
+    .edu-footer,
+    .edu-footer-right a {
+        color: #bebfc0;
+    }
+    
+    .edu-footer .edu-footer-right a:hover {
+        text-decoration: underline;
+    }
+    
+    .edu-footer {
+        height: 262px;
+        background: #2c3339;
+        font: 1.8em/2.5 monospace;
+    }
+    
+    .edu-footer .edu-footer-left,
+    .edu-footer .edu-footer-right {
+        float: left;
+        margin-left: 150px;
+    }
+    
+    .edu-footer .edu-footer-left>div:first-child {
+        padding-top: 80px;
+        width: 235px;
+        height: 22px;
+        background: url('../img/edu/sprite.png') 0 -122px content-box;
+    }
+    
+    .edu-footer .edu-footer-left>div:last-child {
+        width: 490px;
+        padding-top: 30px;
+        word-wrap: break-word;
+    }
+    
+    .edu-footer .edu-footer-right {
+        padding-top: 60px;
+    }
+    
+    .edu-footer .edu-footer-right .edu-footer-col2 {
+        margin-left: 180px;
+    }
+    
+    .edu-footer .edu-footer-right .edu-footer-col3 {
+        margin-left: 300px;
+    }
+    
+    .edu-footer .edu-footer-right .edu-footer-top {
+        margin-top: -10.1em;
+    }
+    
+    .weibo {
+        display: table-cell;
+    }
+    
+    .weibo div {
+        display: inline-block;
+        vertical-align: bottom;
+        padding-left: 5px;
+        margin-bottom: 10px;
+        width: 20px;
+        height: 16px;
+        background: url('../img/edu/sprite.png') 0 -96px content-box;
+    }
+    
+    .login-pop,
+    .video-pop {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background: white;
+        z-index: 101;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    
+    .video-pop {
+        width: 950px;
+        height: 580px;
+        border-radius: 1em;
+    }
+    
+    .video-pop>div:first-child {
+        padding-left: 1.9em;
+    }
+    
+    .video-pop p {
+        float: left;
+        width: 100%;
+        font: 2em monospace;
+        /*padding:1.5em;*/
+    }
+    
+    .video-pop video {
+        display: block;
+        width: 900px;
+        margin: 0 auto;
+    }
+    
+    .video-pop .video-close {
+        width: 20px;
+        float: left;
+        margin-left: -50px;
+        text-align: right;
+        cursor: pointer;
+    }
+    
+    .video-pop p,
+    .video-pop .video-close {
+        line-height: 50px;
+    }
+    
+    .mask {
+        display: none;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 100;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        aside {
+            display: none;
+        }
+        .edu-content .edu-course {
+            float: none;
+            margin: 0 auto;
+        }
+    }
