@@ -13,6 +13,7 @@
 
 <body>
     <header>
+        <div class="top-progress" id="js-top-progress"></div>
         <div class="edu-top-ad">
             网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！
             <a href="http://study.163.com/" target="blank" class="edu-see-ad">立即查看&gt;</a>
@@ -296,9 +297,21 @@
         <div class="login-pop">
         </div>
     </div>
+    
+
     <script type="text/javascript" src="./static/js/util.js"></script>
     <script src="./static/js/dot.js"></script>
     <script src="./static/js/edu.js"></script>
+    <script src="./static/js/progress.js"></script>
+    <script type="text/javascript">
+    var p = myProgress.create($$("#js-top-progress"), "#21a557", false); //第三个参数是进度条保留与否，默认为true
+    p.start(); //进度条开始走
+    
+    window.onload = function() {
+        p.over(); //页面加载完毕，调用，让进度条走完
+        // p2.over(); //页面加载完毕，调用，让进度条走完
+    }
+    </script>
 </body>
 
 </html>
