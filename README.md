@@ -11,6 +11,7 @@
 7. 机构介绍（`遮罩弹窗视频处理`）
 8. 右侧热门推荐滚动处理
 9. 页面布局动态适应（`只处理了小于1200px的状态，简化模拟响应式布局`）
+10. 页面顶部进度条
 > 页面预览图如下
 
 ![网易教育产品部预览图](https://github.com/blff122620/edu/blob/master/static/img/edu/snapshot.png?raw=true)
